@@ -2,12 +2,12 @@ from die import Die
 import pygal
 
 # #create two d6
-die_1 = Die()
-die_2 = Die()
+die_1 = Die(10)
+die_2 = Die(10)
 # numOfDice = 2
 
 #to add third die uncomment
-die_3 = Die()
+die_3 = Die(10)
 numOfDice = 3
 
 
@@ -43,12 +43,12 @@ print(frequencies)
 #visualize results
 hist = pygal.Bar()
 
-hist.title = f"results of rolling 3d6 {rolls} times."
+hist.title = f"results of rolling 3d10 {rolls} times."
 
 #use list comprehension to automatically make the x label
 hist.x_labels = [(x+numOfDice) for x in range(max_result-(numOfDice-1))]
 hist.x_title = "Result"
 hist.y_title = "Frequency of Result"
 
-hist.add('3d6', frequencies)
+hist.add('3d10', frequencies)
 hist.render_to_file('die_visual.svg')
