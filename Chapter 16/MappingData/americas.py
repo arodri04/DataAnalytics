@@ -1,3 +1,10 @@
+############################################
+# Software Req Doc: Mapping Global Data Sets
+# Release Date: 11/15/24
+# Sam Rodriguez
+# Description: File to map the Americas
+# 
+############################################
 from pygal_maps_world.maps import World
 
 wm = World()

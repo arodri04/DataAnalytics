@@ -1,3 +1,10 @@
+############################################
+# Software Req Doc: Mapping Global Data Sets
+# Release Date: 11/15/24
+# Sam Rodriguez
+# Description: Function to get and return the 
+# country codes.
+############################################
 from pygal_maps_world.i18n import COUNTRIES
 
 def get_country_code(country_name):
